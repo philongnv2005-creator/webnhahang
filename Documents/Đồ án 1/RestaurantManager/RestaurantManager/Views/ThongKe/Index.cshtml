@@ -1,0 +1,14 @@
+@model ReportFilterViewModel
+@using System.Text.Json
+@{ ViewData["Title"] = "Thống kê doanh thu"; }
+<div class="page-heading"><div><h1>Thống kê & báo cáo</h1><p>Chỉ tính các hóa đơn đã thanh toán trong khoảng thời gian chọn.</p></div></div>
+<div class="card border-0 shadow-sm mb-4"><div class="card-body"><form method="get" class="row g-3 align-items-end"><div class="col-md-4"><label class="form-label">Từ ngày</label><input type="date" name="from" value="@Model.TuNgay.ToString("yyyy-MM-dd")" class="form-control" /></div><div class="col-md-4"><label class="form-label">Đến ngày</label><input type="date" name="to" value="@Model.DenNgay.ToString("yyyy-MM-dd")" class="form-control" /></div><div class="col-md-4 d-grid"><button class="btn btn-primary"><i class="bi bi-bar-chart me-1"></i>Xem báo cáo</button></div></form></div></div>
+<div class="row g-3 mb-4"><div class="col-md-4"><div class="stat-card"><div class="stat-icon bg-soft-success"><i class="bi bi-cash-stack"></i></div><div><span>Tổng doanh thu</span><strong>@Model.TongDoanhThu.ToString("N0") đ</strong></div></div></div><div class="col-md-4"><div class="stat-card"><div class="stat-icon bg-soft-primary"><i class="bi bi-receipt"></i></div><div><span>Số hóa đơn</span><strong>@Model.SoHoaDon</strong></div></div></div><div class="col-md-4"><div class="stat-card"><div class="stat-icon bg-soft-warning"><i class="bi bi-people"></i></div><div><span>Khách có hồ sơ</span><strong>@Model.SoKhach</strong></div></div></div></div>
+<div class="row g-4"><div class="col-xl-8"><div class="card border-0 shadow-sm"><div class="card-header bg-white py-3"><h5 class="mb-0">Doanh thu theo ngày</h5></div><div class="card-body"><canvas id="revenueChart" height="110"></canvas></div></div></div><div class="col-xl-4"><div class="card border-0 shadow-sm h-100"><div class="card-header bg-white py-3"><h5 class="mb-0">Món bán chạy</h5></div><div class="table-responsive"><table class="table mb-0"><thead><tr><th>Món</th><th class="text-center">SL</th><th class="text-end">Doanh thu</th></tr></thead><tbody>@foreach(var item in Model.MonBanChay){<tr><td>@item.TenMon</td><td class="text-center">@item.SoLuong</td><td class="text-end">@item.DoanhThu.ToString("N0") đ</td></tr>}</tbody></table></div></div></div></div>
+@section Scripts {
+<script>
+const labels = @Html.Raw(JsonSerializer.Serialize(Model.DoanhThuTheoNgay.Select(x => x.Ngay.ToString("dd/MM"))));
+const data = @Html.Raw(JsonSerializer.Serialize(Model.DoanhThuTheoNgay.Select(x => x.DoanhThu)));
+new Chart(document.getElementById('revenueChart'), { type: 'line', data: { labels, datasets: [{ label: 'Doanh thu (đ)', data, tension: .3, fill: true }] }, options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { callback: value => new Intl.NumberFormat('vi-VN').format(value) } } } } });
+</script>
+}
