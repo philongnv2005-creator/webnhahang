@@ -6,6 +6,33 @@
     <InvariantGlobalization>false</InvariantGlobalization>
     <UserSecretsId>b398990e-71e5-49cb-acb7-0faa4cf42d56</UserSecretsId>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\monan\01a91c95bf2f4e9ca5f1464eeacb015b.jpg" Link="wwwroot\uploads\monan\01a91c95bf2f4e9ca5f1464eeacb015b.jpg" />
+    <Content Include="..\..\..\monan\073731fbbcaf48f1a007bcef797f3b0c.jpg" Link="wwwroot\uploads\monan\073731fbbcaf48f1a007bcef797f3b0c.jpg" />
+    <Content Include="..\..\..\monan\1688b321388b4095864eb7b067d47a7d.jpg" Link="wwwroot\uploads\monan\1688b321388b4095864eb7b067d47a7d.jpg" />
+    <Content Include="..\..\..\monan\305588c32b154d60b5efc8ca8d80793d.jpg" Link="wwwroot\uploads\monan\305588c32b154d60b5efc8ca8d80793d.jpg" />
+    <Content Include="..\..\..\monan\3123f70722934f8bb748c0a0524f602d.jpg" Link="wwwroot\uploads\monan\3123f70722934f8bb748c0a0524f602d.jpg" />
+    <Content Include="..\..\..\monan\33a0bc15c89a4850bf9bb9ed4a70637b.jpg" Link="wwwroot\uploads\monan\33a0bc15c89a4850bf9bb9ed4a70637b.jpg" />
+    <Content Include="..\..\..\monan\4138ca5ce57d406692251083ed610798.jpg" Link="wwwroot\uploads\monan\4138ca5ce57d406692251083ed610798.jpg" />
+    <Content Include="..\..\..\monan\4f55ccd75b29424d9f194dc140f8f46a.jpg" Link="wwwroot\uploads\monan\4f55ccd75b29424d9f194dc140f8f46a.jpg" />
+    <Content Include="..\..\..\monan\5510759299984d029437f67c3f002573.jpg" Link="wwwroot\uploads\monan\5510759299984d029437f67c3f002573.jpg" />
+    <Content Include="..\..\..\monan\78cfee3f0d2b4ee69ac4f46559b388f5.jpg" Link="wwwroot\uploads\monan\78cfee3f0d2b4ee69ac4f46559b388f5.jpg" />
+    <Content Include="..\..\..\monan\8096f8bc81ae4fc8aa82eef51a40954a.jpg" Link="wwwroot\uploads\monan\8096f8bc81ae4fc8aa82eef51a40954a.jpg" />
+    <Content Include="..\..\..\monan\8bf587796c4e4ae2b99e41d0004343d4.jpg" Link="wwwroot\uploads\monan\8bf587796c4e4ae2b99e41d0004343d4.jpg" />
+    <Content Include="..\..\..\monan\8d8f7fac2e7a4f2ab1751dde095e8959.jpg" Link="wwwroot\uploads\monan\8d8f7fac2e7a4f2ab1751dde095e8959.jpg" />
+    <Content Include="..\..\..\monan\932f792f6b7e43fcbe546c3e28fc0335.jpg" Link="wwwroot\uploads\monan\932f792f6b7e43fcbe546c3e28fc0335.jpg" />
+    <Content Include="..\..\..\monan\937179edf7794f928c673deaceae4633.jpg" Link="wwwroot\uploads\monan\937179edf7794f928c673deaceae4633.jpg" />
+    <Content Include="..\..\..\monan\a4824e1d110d4a979cd00dd97f09213d.png" Link="wwwroot\uploads\monan\a4824e1d110d4a979cd00dd97f09213d.png" />
+    <Content Include="..\..\..\monan\ac9ee119b0dd44d8bc23ca4ded4b7598.jpg" Link="wwwroot\uploads\monan\ac9ee119b0dd44d8bc23ca4ded4b7598.jpg" />
+    <Content Include="..\..\..\monan\adc7c57770754d29a1763835b33c1f50.jpg" Link="wwwroot\uploads\monan\adc7c57770754d29a1763835b33c1f50.jpg" />
+    <Content Include="..\..\..\monan\b9baf380b87a4a27bf786471705285ce.jpg" Link="wwwroot\uploads\monan\b9baf380b87a4a27bf786471705285ce.jpg" />
+    <Content Include="..\..\..\monan\c9cb267f5208407a8ac0863a171b8f0b.jpg" Link="wwwroot\uploads\monan\c9cb267f5208407a8ac0863a171b8f0b.jpg" />
+    <Content Include="..\..\..\monan\cf55dea09d724c8e9f71a1f33b82375c.jpg" Link="wwwroot\uploads\monan\cf55dea09d724c8e9f71a1f33b82375c.jpg" />
+    <Content Include="..\..\..\monan\d300af2651884f6bb078c86bebdf1afc.jpg" Link="wwwroot\uploads\monan\d300af2651884f6bb078c86bebdf1afc.jpg" />
+    <Content Include="..\..\..\monan\d6d17002b88a4584802fb0a1dc93f2ed.jpg" Link="wwwroot\uploads\monan\d6d17002b88a4584802fb0a1dc93f2ed.jpg" />
+    <Content Include="..\..\..\monan\d78a27272d2f4393b486e2b8a8fdf7be.jpg" Link="wwwroot\uploads\monan\d78a27272d2f4393b486e2b8a8fdf7be.jpg" />
+    <Content Include="..\..\..\monan\e0ab58d6752c448dab29a8c8af72b2ed.jpg" Link="wwwroot\uploads\monan\e0ab58d6752c448dab29a8c8af72b2ed.jpg" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.29" />
